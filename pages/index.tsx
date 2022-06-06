@@ -1,20 +1,18 @@
 import { Container } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import { Header } from '../src/components/layout/header'
+import Header from '../src/components/layout/header'
+import About from '../src/components/sections/about-section'
+import Hero from '../src/components/sections/hero-section'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
     return (
-        <Container
-            display="flex"
-            maxW="container.lg"
-            minH={{ base: 'auto', md: '100vh' }}
-            px={{ base: 4, lg: 0 }}
-            centerContent
-        >
+        <div>
             <Header />
-        </Container>
+            <Hero />
+            <About />
+        </div>
     )
 }
 
