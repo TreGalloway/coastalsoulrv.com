@@ -41,19 +41,27 @@ export default function About() {
                 <GridItem colSpan={1}>
                     <VStack alignItems="flex-start" spacing="20px">
                         <chakra.h2 fontSize="3xl" fontWeight="700">
-                            Medium length title
+                            Let the memories with family & friends begin!
                         </chakra.h2>
-                        <Button colorScheme="green" size="md">
-                            Call To Action
+                        <Button colorScheme="green" size="lg">
+                            Book Now
                         </Button>
                     </VStack>
                 </GridItem>
                 <GridItem>
                     <Flex>
                         <chakra.p>
-                            Provide your customers a story they would enjoy
-                            keeping in mind the objectives of your website. Pay
-                            special attention to the tone of voice.
+                            “Coastal Soul” is a semi-private property that
+                            affords you a relaxing, pleasant time in Crystal
+                            Beach, TX. Located on the Bolivar Peninsula adjacent
+                            to one of the Bird Sanctuaries, this property sits
+                            just a few short walking steps from the sandy shores
+                            of Crystal Beach and local restaurants, shops and
+                            bars. The property has a large, spacious custom
+                            deck/patio for relaxing and watching gorgeous
+                            sunsets. There is also great fishing in the area
+                            with bait shops and local boat ramps just minutes
+                            away.
                         </chakra.p>
                     </Flex>
                 </GridItem>

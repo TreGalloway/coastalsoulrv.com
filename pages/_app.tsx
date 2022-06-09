@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: any) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
             <Component {...pageProps} />
         </ChakraProvider>
     )

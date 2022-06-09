@@ -5,59 +5,57 @@ import {
     Text,
     VStack,
     useBreakpointValue,
+    Box,
+    Heading,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 
-// const bothrentals = require('/Users/tre/coastalsoulrv.com/public/assets/amenities/bothrentals2.JPEG')
-import bothrentals from '../../assets/amenities/bothrentals2.JPEG'
+const heroImage = require('/Users/tre/coastalsoulrv.com/public/assets/amenities/bothrentals2.JPEG')
 
 export default function Hero() {
     return (
-        <Flex
-            w={'full'}
-            h={'100vh'}
-            backgroundImage={bothrentals}
-            backgroundSize={'cover'}
-            backgroundPosition={'center center'}
-        >
-            <VStack
-                w={'full'}
-                justify={'center'}
-                px={useBreakpointValue({ base: 4, md: 8 })}
-                bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
-            >
-                <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-                    <Text
-                        color={'white'}
-                        fontWeight={700}
-                        lineHeight={1.2}
-                        fontSize={useBreakpointValue({
-                            base: '3xl',
-                            md: '4xl',
-                        })}
+        <VStack>
+            <Stack>
+                <Box>
+                    <Image src={heroImage} alt={''} layout="intrinsic" />
+                </Box>
+                {/* <Box>
+                    <Heading
+                        as="h1"
+                        size={'2xl'}
+                        lineHeight={1.1}
+                        fontWeight={600}
+                        fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+                        ml={4}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit
-                        sed do eiusmod tempor
+                        <Text
+                            as={'span'}
+                            position={'relative'}
+                            _after={{
+                                content: "''",
+                                width: 'full',
+                                height: '30%',
+                                position: 'absolute',
+                                bottom: 1,
+                                left: 0,
+                                bg: 'red.400',
+                                zIndex: -1,
+                            }}
+                        >
+                            Write once,
+                        </Text>
+                        <br />
+                        <Text as={'span'} color={'red.400'}>
+                            use everywhere!
+                        </Text>
+                    </Heading>
+                    <Text color={'gray.500'}>
+                        Snippy is a rich coding snippets app that lets you
+                        create your own code snippets, categorize them, and even
+                        sync them in the cloud so you can use them
                     </Text>
-                    <Stack direction={'row'}>
-                        <Button
-                            bg={'blue.400'}
-                            rounded={'full'}
-                            color={'white'}
-                            _hover={{ bg: 'blue.500' }}
-                        >
-                            Show me more
-                        </Button>
-                        <Button
-                            bg={'whiteAlpha.300'}
-                            rounded={'full'}
-                            color={'white'}
-                            _hover={{ bg: 'whiteAlpha.500' }}
-                        >
-                            Show me more
-                        </Button>
-                    </Stack>
-                </Stack>
-            </VStack>
-        </Flex>
+                </Box> */}
+            </Stack>
+        </VStack>
     )
 }

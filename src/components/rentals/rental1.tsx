@@ -1,63 +1,34 @@
 import {
     Container,
-    Stack,
-    Flex,
+    VStack,
     Box,
     Heading,
     Text,
-    Button,
-    Image,
-    Icon,
-    IconButton,
-    createIcon,
-    IconProps,
-    useColorModeValue,
+    Divider,
 } from '@chakra-ui/react'
+import Rental1Carousel from '../carousels/rental1-carousel'
 
 export default function Rental1() {
     return (
-        <Container maxW={'7xl'}>
-            <Stack
-                align={'center'}
-                spacing={{ base: 8, md: 10 }}
-                py={{ base: 20, md: 28 }}
-                direction={{ base: 'column', md: 'row' }}
-            >
-                <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-                    <Heading
-                        lineHeight={1.1}
-                        fontWeight={600}
-                        fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
-                    >
-                        <Text
-                            as={'span'}
-                            position={'relative'}
-                            _after={{
-                                content: "''",
-                                width: 'full',
-                                height: '30%',
-                                position: 'absolute',
-                                bottom: 1,
-                                left: 0,
-                                bg: 'red.400',
-                                zIndex: -1,
-                            }}
-                        >
-                            Write once,
+        <VStack shadow={'md'}>
+            <Container maxW={'md'} mt={'5'}>
+                <Box rounded={'lg'} border={'md'} borderColor={'gray.900'}>
+                    <Rental1Carousel />
+                    <Box>
+                        <Heading>Coastal Soul I (Lodging)</Heading>
+                        <Divider />
+                        <Text>
+                            27’ Coachman Catalina SBX RV/Trailer with super
+                            slide out living area, private sleeping areas, sofa,
+                            appliances. Sleeps 6 guests. The daily rental rate
+                            is $150/day (2-day minimum). The weekly rental rate
+                            is $550. The monthly rental rate is $800. All rates
+                            include utilities. (Rates are based on 2 adult
+                            guests per site and are subject to change)
                         </Text>
-                        <br />
-                        <Text as={'span'} color={'red.400'}>
-                            use everywhere!
-                        </Text>
-                    </Heading>
-                    <Text color={'gray.500'}>
-                        Snippy is a rich coding snippets app that lets you
-                        create your own code snippets, categorize them, and even
-                        sync them in the cloud so you can use them anywhere. All
-                        that is free!
-                    </Text>
-                </Stack>
-            </Stack>
-        </Container>
+                    </Box>
+                </Box>
+            </Container>
+        </VStack>
     )
 }
