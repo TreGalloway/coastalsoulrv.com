@@ -2,6 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     modules: true,
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 
     // image: {
     //     domains: ['https://github.com'],
