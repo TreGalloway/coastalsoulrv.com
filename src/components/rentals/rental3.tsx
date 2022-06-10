@@ -11,8 +11,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Rental3Carousel from '../carousels/rental3-carousel'
 
-const Beach = require('/Users/tre/coastalsoulrv.com/public/assets/rental3/IMG_4129.JPEG')
-
 export default function Rental3() {
     return (
         <VStack shadow={'md'} padding={'2'} rounded={'md'} id="rvsite">

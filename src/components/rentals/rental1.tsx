@@ -13,8 +13,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Rental1Carousel from '../carousels/rental1-carousel'
 
-const Outside1 = require('/Users/tre/coastalsoulrv.com/public/assets/rental1/outside1.JPEG')
-
 export default function Rental1() {
     const { toggleColorMode } = useColorMode()
 
