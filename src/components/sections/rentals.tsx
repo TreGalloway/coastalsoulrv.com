@@ -4,7 +4,7 @@ import Rental1 from '../rentals/rental1'
 
 export default function Rentals() {
     return (
-        <VStack marginLeft={10}>
+        <VStack>
             <Container maxW={'7xl'}>
                 <Stack
                     align={'center'}
@@ -28,21 +28,24 @@ export default function Rentals() {
                                     position: 'absolute',
                                     bottom: 1,
                                     left: 0,
-                                    bg: 'red.400',
+                                    bg: 'tangerine.500',
                                     zIndex: -1,
                                 }}
                             >
-                                Write once,
+                                Explore our
                             </Text>
                             <br />
-                            <Text as={'span'} color={'red.400'}>
-                                use everywhere!
+                            <Text as={'span'} color={'tangerine.400'}>
+                                Rental Options!
                             </Text>
                         </Heading>
                     </Stack>
                 </Stack>
             </Container>
             <RentalStack />
+            <Text color={'red.400s'}>
+                A $25 Cleaning Fee shall be assessed to all RV rentals
+            </Text>
         </VStack>
     )
 }

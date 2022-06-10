@@ -1,6 +1,5 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Divider } from '@chakra-ui/react'
 import type { NextPage } from 'next'
-import Header from '../src/components/layout/navbar/navbar'
 import About from '../src/components/sections/about-section'
 import Contact from '../src/components/sections/contact-section'
 import Hero from '../src/components/sections/hero-section'
@@ -10,9 +9,9 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
     return (
         <Box>
-            <Header />
             <Hero />
             <About />
+            <Divider />
             <Rentals />
             <Contact />
         </Box>

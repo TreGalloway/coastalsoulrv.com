@@ -10,6 +10,8 @@ import {
     Container,
 } from '@chakra-ui/react'
 import {} from '@chakra-ui/react'
+import AmCarousel from '../carousels/amenities-carousel'
+import Link from 'next/link'
 
 interface FeatureProps {
     heading: string
@@ -19,10 +21,26 @@ interface FeatureProps {
 const Feature = ({ heading, text }: FeatureProps) => {
     return (
         <GridItem>
-            <chakra.h3 fontSize="xl" fontWeight="600">
+            <chakra.h3 fontSize="xl" fontWeight="600" color={'mango.400'}>
                 {heading}
             </chakra.h3>
-            <chakra.p>{text}</chakra.p>
+            <chakra.p
+                fontSize={'2xl'}
+                as={'span'}
+                position={'relative'}
+                _after={{
+                    content: "''",
+                    width: 'full',
+                    height: '15%',
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    bg: 'tangerine.500',
+                    zIndex: -1,
+                }}
+            >
+                {text}
+            </chakra.p>
         </GridItem>
     )
 }
@@ -43,14 +61,14 @@ export default function About() {
                         <chakra.h2 fontSize="3xl" fontWeight="700">
                             Let the memories with family & friends begin!
                         </chakra.h2>
-                        <Button colorScheme="green" size="lg">
-                            Book Now
+                        <Button colorScheme="tangerine" size="lg">
+                            <Link href="#contact">Book Now</Link>
                         </Button>
                     </VStack>
                 </GridItem>
                 <GridItem>
                     <Flex>
-                        <chakra.p>
+                        <chakra.p fontSize={'lg'}>
                             “Coastal Soul” is a semi-private property that
                             affords you a relaxing, pleasant time in Crystal
                             Beach, TX. Located on the Bolivar Peninsula adjacent
@@ -67,6 +85,8 @@ export default function About() {
                 </GridItem>
             </Grid>
             <Divider mt={12} mb={12} />
+            <AmCarousel />
+
             <Grid
                 templateColumns={{
                     base: 'repeat(1, 1fr)',
@@ -76,20 +96,17 @@ export default function About() {
                 gap={{ base: '8', sm: '12', md: '16' }}
             >
                 <Feature
-                    heading={'First Feature'}
-                    text={'Short text describing one of you features/service'}
+                    heading={'Custom Deck'}
+                    text={'Deck to sick outside in shade'}
                 />
                 <Feature
-                    heading={'Second Feature'}
-                    text={'Short text describing one of you features/service'}
+                    heading={'BBQ Pit & Fire Pit'}
+                    text={'Grill and Fire pit for your soul food'}
                 />
+
                 <Feature
-                    heading={'Third Feature'}
-                    text={'Short text describing one of you features/service'}
-                />
-                <Feature
-                    heading={'Fourth Feature'}
-                    text={'Short text describing one of you features/service'}
+                    heading={'Yamaha Golf Cart'}
+                    text={'$100/day…Based on availability'}
                 />
             </Grid>
         </Box>

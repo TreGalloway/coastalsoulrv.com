@@ -9,7 +9,7 @@ import {
     HStack,
 } from '@chakra-ui/react'
 
-const Rental1Carousel = (props: any) => {
+const Rental2Carousel = () => {
     const arrowStyles = {
         cursor: 'pointer',
         pos: 'absolute',
@@ -31,37 +31,25 @@ const Rental1Carousel = (props: any) => {
 
     const slides = [
         {
-            img: 'https://images.pexels.com/photos/12455978/pexels-photo-12455978.jpeg?cs=srgb&dl=pexels-tre-galloway-12455978.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456269/pexels-photo-12456269.jpeg?cs=srgb&dl=pexels-tre-galloway-12456269.jpg&fm=jpg',
         },
         {
-            img: 'https://images.pexels.com/photos/12455985/pexels-photo-12455985.jpeg?cs=srgb&dl=pexels-tre-galloway-12455985.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456266/pexels-photo-12456266.jpeg?cs=srgb&dl=pexels-tre-galloway-12456266.jpg&fm=jpg',
         },
         {
-            img: 'https://images.pexels.com/photos/12455982/pexels-photo-12455982.jpeg?cs=srgb&dl=pexels-tre-galloway-12455982.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456262/pexels-photo-12456262.jpeg?cs=srgb&dl=pexels-tre-galloway-12456262.jpg&fm=jpg',
         },
         {
-            img: 'https://images.pexels.com/photos/12455980/pexels-photo-12455980.jpeg?cs=srgb&dl=pexels-tre-galloway-12455980.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456263/pexels-photo-12456263.jpeg?cs=srgb&dl=pexels-tre-galloway-12456263.jpg&fm=jpg',
         },
         {
-            img: 'https://images.pexels.com/photos/12455976/pexels-photo-12455976.jpeg?cs=srgb&dl=pexels-tre-galloway-12455976.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456264/pexels-photo-12456264.jpeg?cs=srgb&dl=pexels-tre-galloway-12456264.jpg&fm=jpg',
         },
         {
-            img: 'https://images.pexels.com/photos/12455975/pexels-photo-12455975.jpeg?cs=srgb&dl=pexels-tre-galloway-12455975.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456261/pexels-photo-12456261.jpeg?cs=srgb&dl=pexels-tre-galloway-12456261.jpg&fm=jpg',
         },
         {
-            img: 'https://images.pexels.com/photos/12455986/pexels-photo-12455986.jpeg?cs=srgb&dl=pexels-tre-galloway-12455986.jpg&fm=jpg',
-        },
-        {
-            img: 'https://images.pexels.com/photos/12455981/pexels-photo-12455981.jpeg?cs=srgb&dl=pexels-tre-galloway-12455981.jpg&fm=jpg',
-        },
-        {
-            img: 'https://images.pexels.com/photos/12455977/pexels-photo-12455977.jpeg?cs=srgb&dl=pexels-tre-galloway-12455977.jpg&fm=jpg',
-        },
-        {
-            img: 'https://images.pexels.com/photos/12455979/pexels-photo-12455979.jpeg?cs=srgb&dl=pexels-tre-galloway-12455979.jpg&fm=jpg',
-        },
-        {
-            img: 'https://images.pexels.com/photos/12455984/pexels-photo-12455984.jpeg?cs=srgb&dl=pexels-tre-galloway-12455984.jpg&fm=jpg',
+            img: 'https://images.pexels.com/photos/12456268/pexels-photo-12456268.jpeg?cs=srgb&dl=pexels-tre-galloway-12456268.jpg&fm=jpg',
         },
     ]
 
@@ -118,7 +106,6 @@ const Rental1Carousel = (props: any) => {
                     </Box>
                 ))}
             </Flex>
-
             <Text {...arrowStyles} left="0" onClick={prevSlide}>
                 &#10094;
             </Text>
@@ -149,4 +136,4 @@ const Rental1Carousel = (props: any) => {
         // </Flex>
     )
 }
-export default Rental1Carousel
+export default Rental2Carousel

@@ -24,20 +24,38 @@ import {
     MdFacebook,
     MdOutlineEmail,
 } from 'react-icons/md'
+import {
+    Formik,
+    FormikHelpers,
+    FormikProps,
+    Form,
+    Field,
+    FieldProps,
+} from 'formik'
+
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs'
+import Link from 'next/link'
+
+interface MyFormValues {
+    name: string
+    email: string
+    message: string
+}
 
 export default function Contact() {
+    const initialValues: MyFormValues = { name: '', email: '', message: '' }
+
     return (
         <Container
-            bg="#9DC4FB"
             maxW="full"
-            mt={10}
+            pt={10}
             centerContent
             overflow="hidden"
+            id="contact"
         >
             <Flex>
                 <Box
-                    bg="#02054B"
+                    bg={'emerald.600'}
                     color="white"
                     borderRadius="lg"
                     m={{ sm: 4, md: 16, lg: 10 }}
@@ -47,25 +65,35 @@ export default function Contact() {
                         <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                             <WrapItem>
                                 <Box>
-                                    <Heading>Contact</Heading>
-                                    <Text
+                                    <Heading>Call or Email to Book</Heading>
+                                    <Formik
+                                        initialValues={initialValues}
+                                        onSubmit={(values, actions) => {
+                                            console.log({ values, actions })
+                                            alert(
+                                                JSON.stringify(values, null, 2)
+                                            )
+                                            actions.setSubmitting(false)
+                                        }}
+                                    ></Formik>
+                                    {/* <Text
                                         mt={{ sm: 3, md: 3, lg: 5 }}
-                                        color="gray.500"
+                                        color="gray.50"
                                     >
                                         Fill up the form below to contact
-                                    </Text>
+                                    </Text> */}
                                     <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                                         <VStack
                                             pl={0}
                                             spacing={3}
-                                            alignItems="flex-start"
+                                            alignItems="center"
                                         >
                                             <Button
                                                 size="md"
                                                 height="48px"
                                                 width="200px"
                                                 variant="ghost"
-                                                color="#DCE2FF"
+                                                color="mango.400"
                                                 _hover={{
                                                     border: '2px solid #1C6FEB',
                                                 }}
@@ -76,7 +104,10 @@ export default function Contact() {
                                                     />
                                                 }
                                             >
-                                                +91-988888888
+                                                <a
+                                                    href={'tel:+17135025126'}
+                                                ></a>
+                                                713-502-5126
                                             </Button>
                                             <Button
                                                 size="md"
@@ -94,7 +125,13 @@ export default function Contact() {
                                                     />
                                                 }
                                             >
-                                                hello@abc.com
+                                                <Link
+                                                    href={
+                                                        'mailto:feliciafish@att.net'
+                                                    }
+                                                >
+                                                    feliciafish@att.net
+                                                </Link>
                                             </Button>
                                             <Button
                                                 size="md"
@@ -112,17 +149,24 @@ export default function Contact() {
                                                     />
                                                 }
                                             >
-                                                Karnavati, India
+                                                <a
+                                                    href={
+                                                        'https://goo.gl/maps/9zTGGPPfNWMRS8ea9'
+                                                    }
+                                                >
+                                                    {' '}
+                                                    Crystal Beach, TX
+                                                </a>
                                             </Button>
                                         </VStack>
                                     </Box>
                                 </Box>
                             </WrapItem>
-                            <WrapItem padding={5}>
+                            {/* <WrapItem padding={5}>
                                 <Box bg="white" borderRadius="lg">
                                     <Box m={8} color="#0B0E3F">
                                         <VStack spacing={5}>
-                                            <FormControl id="name">
+                                            <FormControl id="name" isRequired>
                                                 <FormLabel>Your Name</FormLabel>
                                                 <InputGroup borderColor="#E0E1E7">
                                                     <InputLeftElement
@@ -137,7 +181,7 @@ export default function Contact() {
                                                     />
                                                 </InputGroup>
                                             </FormControl>
-                                            <FormControl id="name">
+                                            <FormControl id="mail" isRequired>
                                                 <FormLabel>Mail</FormLabel>
                                                 <InputGroup borderColor="#E0E1E7">
                                                     <InputLeftElement
@@ -152,7 +196,10 @@ export default function Contact() {
                                                     />
                                                 </InputGroup>
                                             </FormControl>
-                                            <FormControl id="name">
+                                            <FormControl
+                                                id="message"
+                                                isRequired
+                                            >
                                                 <FormLabel>Message</FormLabel>
                                                 <Textarea
                                                     borderColor="gray.300"
@@ -164,10 +211,11 @@ export default function Contact() {
                                                 />
                                             </FormControl>
                                             <FormControl
-                                                id="name"
+                                                id="submit"
                                                 float="right"
                                             >
                                                 <Button
+                                                    type="submit"
                                                     variant="solid"
                                                     bg="#0D74FF"
                                                     color="white"
@@ -179,7 +227,7 @@ export default function Contact() {
                                         </VStack>
                                     </Box>
                                 </Box>
-                            </WrapItem>
+                            </WrapItem> */}
                         </Wrap>
                     </Box>
                 </Box>

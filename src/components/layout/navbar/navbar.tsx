@@ -21,21 +21,25 @@ import { ColorModeSwitcher } from './colormodeswitcher'
 // const Links = ["Dashboard", "Projects", "Team"];
 import navStyles from './navbar.module.css'
 const Links = [
+    // {
+    //     name: 'Home',
+    //     path: '/',
+    // },
     {
-        name: 'Home',
-        path: '/',
+        name: 'Coastal Soul I',
+        path: '#coastalsoul1',
     },
     {
-        name: 'My Todos',
-        path: '/todos',
+        name: 'Coastal Soul II',
+        path: '#coastalsoul2',
     },
     {
-        name: 'All Users',
-        path: '/users/',
+        name: 'Rv Port/Site',
+        path: '#rvsite',
     },
     {
-        name: 'With MongoDB',
-        path: '/with-mongo-db',
+        name: 'Contact',
+        path: '#contact',
     },
 ]
 
