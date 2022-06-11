@@ -5,12 +5,15 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true,
     },
-
+    images: {
+        domains: ['images.pexels.com'],
+        // formats: [],
+    },
     // image: {
     //     domains: ['https://github.com'],
     // },
 }
 
-const withImages = require('next-images')
+// const withImages = require('next-images')
 
-module.exports = withImages(nextConfig)
+module.exports = nextConfig
