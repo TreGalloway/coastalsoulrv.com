@@ -10,14 +10,16 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 
-const heroImage = require('/Users/tre/coastalsoulrv.com/public/assets/amenities/bothrentals2.JPEG')
-
 export default function Hero() {
     return (
         <VStack>
             <Stack>
                 <Box>
-                    <Image src={heroImage} alt={''} layout="intrinsic" />
+                    <Image
+                        src="https://images.pexels.com/photos/12456368/pexels-photo-12456368.jpeg?cs=srgb&dl=pexels-tre-galloway-12456368.jpg&fm=jpg"
+                        alt={''}
+                        layout="intrinsic"
+                    />
                 </Box>
                 {/* <Box>
                     <Heading
