@@ -23,7 +23,11 @@ export default function Rental3() {
                     <Box>
                         <Heading color={'tangerine.400'}>RV Port/Site</Heading>
                         <Divider />
-                        <Text padding={'3'} fontSize={'xl'}>
+                        <Text
+                            padding={'3'}
+                            fontSize={'xl'}
+                            fontWeight={'semibold'}
+                        >
                             Property has all utilities
                             (Water/Electricity/Septic) including a 30 AMP
                             Breaker with two additional 110 plug outlets on the

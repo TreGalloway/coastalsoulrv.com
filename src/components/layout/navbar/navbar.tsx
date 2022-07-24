@@ -50,7 +50,7 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
         rounded={'md'}
         _hover={{
             textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
+            bg: useColorModeValue('gray.100', 'gray.700'),
         }}
     >
         <Link href={path}>{children}</Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
 
     return (
         <div className={navStyles.mobileNav}>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+            <Box bg={useColorModeValue('gray.50', 'gray.900')} px={4}>
                 <Flex
                     h={16}
                     alignItems={'center'}

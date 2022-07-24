@@ -16,6 +16,7 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
+    Divider,
 } from '@chakra-ui/react'
 import {
     MdPhone,
@@ -65,7 +66,23 @@ export default function Contact() {
                         <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                             <WrapItem>
                                 <Box>
-                                    <Heading>Call or Email to Book</Heading>
+                                    <Heading
+                                        fontFamily={'cursive'}
+                                        textAlign={'center'}
+                                        color={'mango.300'}
+                                    >
+                                        Let The Memories Begin!
+                                    </Heading>
+                                    <Box
+                                        rounded={'full'}
+                                        bg={'gray.100'}
+                                        height={'0.5'}
+                                    >
+                                        {' '}
+                                    </Box>
+                                    <Heading textAlign={'center'}>
+                                        Call or Email to Book
+                                    </Heading>
                                     <Formik
                                         initialValues={initialValues}
                                         onSubmit={(values, actions) => {
@@ -93,7 +110,7 @@ export default function Contact() {
                                                 height="48px"
                                                 width="200px"
                                                 variant="ghost"
-                                                color="mango.400"
+                                                color="#DCE2FF"
                                                 _hover={{
                                                     border: '2px solid #1C6FEB',
                                                 }}

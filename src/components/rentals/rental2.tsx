@@ -27,7 +27,11 @@ export default function Rental2() {
                             Coastal Soul II (Lodging)
                         </Heading>
                         <Divider />
-                        <Text padding={'3'} fontSize={'xl'}>
+                        <Text
+                            padding={'3'}
+                            fontSize={'xl'}
+                            fontWeight={'semibold'}
+                        >
                             27’ Skyline Layton RV/Trailer with living area,
                             private sleeping areas, sofa, appliances. Sleeps 6
                             guests. The daily rental rate is $150/day (2-day

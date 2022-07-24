@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import '@fontsource/pacifico'
 
 const config = {
     initialColorMode: 'light',
@@ -83,6 +84,7 @@ export const theme = extendTheme({
     fonts: {
         body: 'system-ui, sans-serif',
         heading: 'Georgia, serif',
+        cursive: 'Pacifico, cursive',
         mono: 'Menlo, monospace',
     },
     fontSizes: {

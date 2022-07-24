@@ -1,4 +1,4 @@
-import { VStack, Container, Stack, Heading, Text } from '@chakra-ui/react'
+import { VStack, Container, Stack, Heading, Text, Box } from '@chakra-ui/react'
 import RentalStack from '../rentals/rental-stack'
 import Rental1 from '../rentals/rental1'
 
@@ -28,7 +28,7 @@ export default function Rentals() {
                                     position: 'absolute',
                                     bottom: 1,
                                     left: 0,
-                                    bg: 'tangerine.500',
+                                    bg: 'tangerine.200',
                                     zIndex: -1,
                                 }}
                             >
@@ -43,9 +43,11 @@ export default function Rentals() {
                 </Stack>
             </Container>
             <RentalStack />
-            <Text color={'red.400s'}>
-                A $25 Cleaning Fee shall be assessed to all RV rentals
-            </Text>
+            <Box bg={'gray.50'} _dark={{ bg: 'gray.700' }} rounded={'lg'}>
+                <Text color={'red.400s'} fontWeight={'bold'} margin={4}>
+                    A $25 Cleaning Fee shall be assessed to all RV rentals
+                </Text>
+            </Box>
         </VStack>
     )
 }

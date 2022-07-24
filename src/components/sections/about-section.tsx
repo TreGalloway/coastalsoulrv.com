@@ -35,7 +35,7 @@ const Feature = ({ heading, text }: FeatureProps) => {
                     position: 'absolute',
                     bottom: 0,
                     left: 0,
-                    bg: 'tangerine.500',
+                    bg: 'tangerine.200',
                     zIndex: -1,
                 }}
             >
@@ -58,28 +58,38 @@ export default function About() {
             >
                 <GridItem colSpan={1}>
                     <VStack alignItems="flex-start" spacing="20px">
-                        <chakra.h2 fontSize="3xl" fontWeight="700">
-                            Let the memories with family & friends begin!
+                        <chakra.h2
+                            fontSize="5xl"
+                            fontFamily={'cursive'}
+                            textAlign={'center'}
+                        >
+                            Welcome to Coastal Soul!
                         </chakra.h2>
-                        <Button colorScheme="tangerine" size="lg">
+                        <Button
+                            colorScheme="tangerine"
+                            size="lg"
+                            placeSelf={'center'}
+                        >
                             <Link href="#contact">Book Now</Link>
                         </Button>
                     </VStack>
                 </GridItem>
                 <GridItem>
                     <Flex>
-                        <chakra.p fontSize={'lg'}>
+                        <chakra.p fontSize={'lg'} fontWeight={'semibold'}>
                             “Coastal Soul” is a semi-private property that
                             affords you a relaxing, pleasant time in Crystal
                             Beach, TX. Located on the Bolivar Peninsula adjacent
                             to one of the Bird Sanctuaries, this property sits
                             just a few short walking steps from the sandy shores
-                            of Crystal Beach and local restaurants, shops and
-                            bars. The property has a large, spacious custom
-                            deck/patio for relaxing and watching gorgeous
-                            sunsets. There is also great fishing in the area
-                            with bait shops and local boat ramps just minutes
-                            away.
+                            of Crystal Beach, local restaurants, shops and bars.
+                            Minutes away from the new Bolivar Rv resort lot
+                            giving you access to live music, swimming pool, swim
+                            up bar, & resturants. The property has a large,
+                            spacious custom deck/patio for relaxing and watching
+                            gorgeous sunsets. There is also great fishing in the
+                            area with bait shops and local boat ramps just
+                            minutes away.Let the memorires begin!
                         </chakra.p>
                     </Flex>
                 </GridItem>
@@ -96,12 +106,16 @@ export default function About() {
                 gap={{ base: '8', sm: '12', md: '16' }}
             >
                 <Feature
-                    heading={'Custom Deck'}
-                    text={'Deck to sick outside in shade'}
+                    heading={'Cupboard Deck'}
+                    text={
+                        'Cupboard for relaxing and watching beautiful sunsets.'
+                    }
                 />
                 <Feature
                     heading={'BBQ Pit & Fire Pit'}
-                    text={'Grill and Fire pit for your soul food'}
+                    text={
+                        'Gas grill and smoker for outdoor cooking. Custom fire pit for late night campfires.'
+                    }
                 />
 
                 <Feature

@@ -34,7 +34,7 @@ export default function Rental1() {
                             Coastal Soul I (Lodging)
                         </Heading>
                         <Divider />
-                        <Text fontSize={'xl'}>
+                        <Text fontSize={'xl'} fontWeight={'semibold'}>
                             27’ Coachman Catalina SBX RV/Trailer with super
                             slide out living area, private sleeping areas, sofa,
                             appliances. Sleeps 6 guests. The daily rental rate
@@ -43,9 +43,6 @@ export default function Rental1() {
                             include utilities. (Rates are based on 2 adult
                             guests per site and are subject to change)
                         </Text>
-                        {/* <Button size={'lg'}>
-                            <Link href={'/rental1'}>Gallery</Link>{' '}
-                        </Button> */}
                     </Box>
                 </Box>
             </Container>
