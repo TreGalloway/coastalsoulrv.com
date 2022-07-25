@@ -31,7 +31,7 @@ const Feature = ({ heading, text }: FeatureProps) => {
                 _after={{
                     content: "''",
                     width: 'full',
-                    height: '15%',
+                    height: '0%',
                     position: 'absolute',
                     bottom: 0,
                     left: 0,
@@ -104,18 +104,21 @@ export default function About() {
                     md: 'repeat(4, 1fr)',
                 }}
                 gap={{ base: '8', sm: '12', md: '16' }}
+                alignSelf={'center'}
             >
                 <Feature
                     heading={'Cupboard Deck'}
                     text={
-                        'Cupboard for relaxing and watching beautiful sunsets.'
+                        'Cupboard Deck for relaxing and watching beautiful sunsets.'
                     }
                 />
                 <Feature
                     heading={'BBQ Pit & Fire Pit'}
-                    text={
-                        'Gas grill and smoker for outdoor cooking. Custom fire pit for late night campfires.'
-                    }
+                    text={'Gas grill and smoker for outdoor cooking.'}
+                />
+                <Feature
+                    heading={'Fire Pit'}
+                    text={'Custom fire pit for late night campfires.'}
                 />
 
                 <Feature

@@ -24,7 +24,7 @@ export default function Rentals() {
                                 _after={{
                                     content: "''",
                                     width: 'full',
-                                    height: '30%',
+                                    height: '20%',
                                     position: 'absolute',
                                     bottom: 1,
                                     left: 0,
@@ -34,8 +34,8 @@ export default function Rentals() {
                             >
                                 Explore our
                             </Text>
-                            <br />
-                            <Text as={'span'} color={'tangerine.400'}>
+
+                            <Text as={'span'} color={'tangerine.300'}>
                                 Rental Options!
                             </Text>
                         </Heading>

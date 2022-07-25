@@ -35,11 +35,8 @@ export default function Rental3() {
                             rental. The daily rental rate is $55/day (2-day
                             minimum). The weekly rate is $300/wk. The monthly
                             rental rate is $650 which includes utilities. (Rates
-                            are subject to change)
+                            are subject to change).
                         </Text>
-                        {/* <Button size={'lg'}>
-                            <Link href={'/rental1'}>Gallery</Link>{' '}
-                        </Button> */}
                     </Box>
                 </Box>
             </Container>

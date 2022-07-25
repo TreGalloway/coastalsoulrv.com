@@ -32,17 +32,16 @@ export default function Rental2() {
                             fontSize={'xl'}
                             fontWeight={'semibold'}
                         >
-                            27’ Skyline Layton RV/Trailer with living area,
-                            private sleeping areas, sofa, appliances. Sleeps 6
-                            guests. The daily rental rate is $150/day (2-day
-                            minimum). The weekly rental rate is $550. The
-                            monthly rental rate is $800. All rates include
-                            utilities. (Rates are based on 2 adult guests per
-                            site and are subject to change)
+                            <Text fontWeight={'bold'} as={'u'}>
+                                27’ Skyline Layton RV/Trailer
+                            </Text>{' '}
+                            with living area, private sleeping areas, sofa,
+                            appliances. Sleeps 6 guests. The daily rental rate
+                            is $150/day (2-day minimum). The weekly rental rate
+                            is $550. The monthly rental rate is $800. All rates
+                            include utilities. (Rates are based on 2 adult
+                            guests per site and are subject to change).
                         </Text>
-                        {/* <Button size={'lg'}>
-                            <Link href={'/rental1'}>Gallery</Link>{' '}
-                        </Button> */}
                     </Box>
                 </Box>
             </Container>
